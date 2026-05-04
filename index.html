@@ -1,117 +1,131 @@
 <!DOCTYPE html>
+
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>直井ぱんの自己紹介</title>
-<style>
+  <meta charset="UTF-8">
+  <title>直井ぱんの自己紹介</title>
+
+  <!-- かわいいフォント -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+
+  <style>
     body {
-        margin: 0;
-        font-family: "Comic Sans MS", "Hiragino Maru Gothic Pro", "Arial Rounded MT Bold", sans-serif;
-        background-color: #f4fff4;
-        color: #222;
-        text-align: center;
+      margin: 0;
+      font-family: 'Kosugi Maru', sans-serif;
+      background: linear-gradient(180deg, #f0fff4, #e8f5e9);
+      color: #333;
     }
 
     header {
-        background-color: #000;
-        color: #fff;
-        padding: 20px;
-        border-bottom: 5px solid #4CAF50;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      border-bottom: 8px solid #66bb6a;
     }
 
     header h1 {
-        margin: 0;
-        font-size: 2.5em;
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.1em;
     }
 
     .container {
-        padding: 20px;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 0 20px;
     }
 
     .card {
-        background-color: #fff;
-        border-radius: 20px;
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 600px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        border: 3px solid #000;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
     }
 
     h2 {
-        color: #4CAF50;
+      color: #2e7d32;
+      border-left: 8px solid #66bb6a;
+      padding-left: 10px;
     }
 
-    .image-placeholder {
-        width: 200px;
-        height: 200px;
-        margin: 0 auto 15px;
-        background-color: #ddd;
-        border-radius: 50%;
-        border: 3px dashed #999;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #666;
-        font-size: 14px;
+    img {
+      width: 100%;
+      border-radius: 15px;
+      object-fit: cover;
     }
 
-    .food-list span {
-        display: inline-block;
-        background-color: #4CAF50;
-        color: #fff;
-        padding: 8px 12px;
-        border-radius: 15px;
-        margin: 5px;
+    ul {
+      padding-left: 20px;
     }
 
     footer {
-        margin-top: 30px;
-        padding: 15px;
-        background-color: #000;
-        color: #fff;
-        font-size: 0.9em;
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: white;
+      border-top: 8px solid #66bb6a;
+      margin-top: 40px;
     }
-</style>
+
+    .emoji {
+      font-size: 1.3em;
+    }
+  </style>
+
 </head>
+
 <body>
 
 <header>
-    <h1>直井ぱん 🐼</h1>
-    <p>中国生まれのパンダのぬいぐるみ</p>
+  <h1>🐼 直井ぱんのページ 🐼</h1>
+  <p>中国生まれのパンダのぬいぐるみです</p>
 </header>
 
 <div class="container">
 
-    <div class="card">
-        <div class="image-placeholder">
-            ここに写真を入れてね
-        </div>
-        <h2>自己紹介</h2>
-        <p>
-            はじめまして！直井ぱんです。<br>
-            中国で生まれた、のんびり屋のパンダのぬいぐるみです。<br>
-            笹を食べたり、ごろごろするのが大好きです♪
-        </p>
-    </div>
+  <div class="card">
+    <h2>📸 写真</h2>
+    <img src="images/panda.jpg" alt="直井ぱんの写真">
+  </div>
 
-    <div class="card">
-        <h2>好きな食べ物</h2>
-        <div class="food-list">
-            <span>笹</span>
-            <span>お団子</span>
-        </div>
-    </div>
+  <div class="card">
+    <h2>🌱 自己紹介</h2>
+    <p>
+      はじめまして！ぼくは「直井ぱん」です。<br>
+      中国で生まれたパンダのぬいぐるみだよ。<br>
+      のんびりするのが大好きで、いつもゴロゴロしています。
+    </p>
+  </div>
 
-    <div class="card">
-        <h2>出身地</h2>
-        <p>中国 🇨🇳</p>
-    </div>
+  <div class="card">
+    <h2>🍡 好きな食べ物</h2>
+    <ul>
+      <li>笹 🎋</li>
+      <li>お団子 🍡</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>🌏 出身地</h2>
+    <p>中国 🇨🇳</p>
+  </div>
 
 </div>
 
 <footer>
-    © 直井ぱんのページ
+  <p>© 直井ぱん</p>
 </footer>
 
 </body>
